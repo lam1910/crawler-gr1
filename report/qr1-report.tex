@@ -189,20 +189,20 @@ To crawl data from a website, we need to specify exactly where\footnote{the HTML
 	\subsection{Website classification}
 	Github website is a structured website thus it better for our crawler to use the xpath selector. But to familiarize with how scrapy works, I choose to use the css selector.
 	\subsection{Result}
-	The end result is a json file containing title of the repository, Url to that repository, and last modified date of all the public repository in \href{https://github.com/vietanhdev?tab=repositories}{Github}. You can find out the result at
+	The end result is a json file containing title of the repository, Url to that repository, and last modified date of all the public repository in \href{https://github.com/vietanhdev?tab=repositories}{Github}. You can find out the result at \href{https://github.com/lam1910/crawler-gr1/blob/master/github-1303-vietanh.json}{json result}
 \section{First website: travelling blog}
 	\subsection{Goals}
 	The goal of this problem is to get the user experiences when travelling in Vietnam via their travelling blog.
 	\subsection{Website classification}
 	This is a blog website with simple structure. It only contains a big div for css to make the website more beautiful. The information is stored on p tags with the titles is on the h3 and h4 tags.
 	\subsection{Result}
-	The end result is a csv file containing title of the experiences, places that he or she pass in Vietnam, and and the paragraph about the experiences. You can find out the result at
-\section{Second website: tripadvisor page}
+	The end result is a csv file containing title of the experiences, places that he or she pass in Vietnam, and and the paragraph about the experiences. You can find out the result at \href{https://github.com/lam1910/crawler-gr1/blob/master/world-travel-family/world-travel-family.csv}{blog result}
+\section{Second website: tripadvisor page}. There is a sql file to create a database using postgresql with the csv.
 	\subsection{Goals}
 	The goal of this problem is to get the user rating of each places they visited when travelling in Vietnam via a community rating system on tripadvisor.
 	\subsection{Website classification}
 	This is a well-defined structure website. This type of website usually built using a open-source framework like node.js. It has multiple div tags and inside those tags there are a lot of other tag. Each location is also on a div tag of their own. The information (the rating) is stored on the attribute on an a tag inside each individual div tags.
 	\subsection{Result}
-	The result is a detail database on places and rating of that places on 6 famous tourist cities in Vietnam Hanoi, Ho Chi Minh city, Danang, Hue, Hoian, and Sapa. This information is stored on the csv with each line containing the name of the city, the type of the places, the name of the place and its rating. You can find out the result at
+	The result is a detail database on places and rating of that places on 6 famous tourist cities in Vietnam Hanoi, Ho Chi Minh city, Danang, Hue, Hoian, and Sapa. This information is stored on the csv with each line containing the name of the city, the type of the places, the name of the place and its rating. You can find out the result at \href{https://github.com/lam1910/crawler-gr1/blob/master/trip-advisor/trip-data.csv}{tripadvisor data}. There is a sql file to create a database using postgresql with the csv.
 \end{document}
 
